@@ -46,8 +46,9 @@ namespace NetCoreWeb
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles("/netcoreweb");
-            app.UsePathBase("/netcoreweb");
+            //app.UseStaticFiles("/netcoreweb");
+            //app.UsePathBase("/netcoreweb");
+            app.UseStaticFiles();
             app.UseCookiePolicy();
 
             app.UseMvc(routes =>
